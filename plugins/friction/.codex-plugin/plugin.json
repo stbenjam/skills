@@ -1,0 +1,18 @@
+{
+  "name": "friction",
+  "version": "0.1.0",
+  "description": "Eliminate everyday friction through direct action, delegation, specialist services, or automation within explicit authorization boundaries.",
+  "author": {
+    "name": "stbenjam"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Friction",
+    "shortDescription": "Make annoying work disappear.",
+    "longDescription": "Solve chores and logistical problems end to end by acting directly, automating them, or finding and hiring the right service within explicit authorization boundaries.",
+    "developerName": "stbenjam",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Use $solve to make this problem disappear with the least effort from me."
+  }
+}

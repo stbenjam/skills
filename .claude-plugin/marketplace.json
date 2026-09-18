@@ -44,6 +44,11 @@
       "name": "keepgoing",
       "source": "./plugins/keepgoing",
       "description": "A Stop hook that never lets Claude stop. Useful for solving unsolved math problems."
+    },
+    {
+      "name": "friction",
+      "source": "./plugins/friction",
+      "description": "Eliminate everyday friction through direct action, delegation, specialist services, or automation within explicit authorization boundaries."
     }
   ]
 }
