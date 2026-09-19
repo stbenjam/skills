@@ -17,6 +17,15 @@ commit the regenerated files together with the scripts.
 `make test`, `make lint`, `make update`, then a smoke test against
 `openshift-eng/ai-helpers` (clone it, run `skillsaw lint`, expect exit 0).
 
+## Action self-lint uses strict mode
+
+The `self-lint` job in `test-action.yml` passes `strict: true` and disables
+custom rules for pull requests. Local `make update` runs `self-lint`
+without `--strict`, so it can exit 0 while reporting warnings that fail CI.
+Before pushing, also run `.venv/bin/skillsaw lint . --strict --no-custom-rules`
+from the skillsaw checkout and inspect the warning summary. When changing
+APM instructions, regenerate first so this checks the final authored content.
+
 ## ai-helpers smoke test gotcha
 
 Run the smoke test with a **release-equivalent install** — a fresh venv
