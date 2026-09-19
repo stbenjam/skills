@@ -44,6 +44,11 @@
       "name": "keepgoing",
       "source": "./plugins/keepgoing",
       "description": "A Stop hook for Claude Code and Codex that requests one final completion pass, with an opt-in infinite mode."
+    },
+    {
+      "name": "friction",
+      "source": "./plugins/friction",
+      "description": "Eliminate everyday friction through direct action, delegation, specialist services, or automation within explicit authorization boundaries."
     }
   ]
 }
