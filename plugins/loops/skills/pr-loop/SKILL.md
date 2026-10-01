@@ -102,6 +102,10 @@ Matching references override the corresponding setup steps and phases.
 
 #### Step 1.7: Schedule the loop
 
+Without `CronList`, `CronCreate`, and `CronDelete`, continue the current
+CI/review cycle and report that recurring monitoring was not installed.
+Do not substitute unrelated page/site automations. Follow Step 5.2's handoff.
+
 Check `CronList` — if pr-loop crons already exist for this PR,
 skip. Otherwise create two crons:
 
@@ -274,6 +278,11 @@ If still open, re-check:
 monitoring with backoff.
 
 #### Step 5.2: Schedule next iteration
+
+Without scheduling, complete actionable work and Phase 3's bounded CI
+checks. When only CI or human review/merge remains, report PR/check/comment
+status and that no recurring monitoring is running. Preserve the worktree
+for a later invocation, then end without claiming merger or timeout.
 
 Delete the **dynamic** cron (`CronList` + `CronDelete`), then
 create a new one at the appropriate interval. Do not touch the
