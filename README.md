@@ -26,7 +26,7 @@ Shared skills and plugins for Claude Code and Codex by stbenjam.
 | [keepgoing](plugins/keepgoing/) | A Stop hook for Claude Code and Codex that requests one final completion pass, with an opt-in infinite mode. |
 | [loops](plugins/loops/) | Autonomous loops that shepherd work to completion, such as driving a PR to a mergeable state |
 | [openclaw](plugins/openclaw/) | A grab-bag of miscellaneous OpenClaw skills (pollen forecasts, Orangetheory lookups, narrated video reels) with no unifying theme. |
-| [reviews](plugins/reviews/) | Multi-agent panel code review with specialist reviewers and runtime reproducers |
+| [reviews](plugins/reviews/) | Code review with specialist reviewers and runtime reproducers, plus guided eval and benchmark task walkthroughs |
 | [rules](plugins/rules/) | Context-specific rules for safe Git operations and rigorous test-failure investigation. |
 | [steering](plugins/steering/) | Compact conversation-steering skills for changing direction, explaining decisions, asking for clarity, answering questions without implied action, finishing punted work, delegating research to a subagent, tightening prose, executing decisively, rethinking code architecture, and raising frontend quality. |
 <!-- END GENERATED PLUGIN TABLE -->

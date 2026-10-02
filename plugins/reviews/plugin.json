@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "reviews",
-  "version": "0.0.4",
-  "description": "Multi-agent panel code review with specialist reviewers and runtime reproducers",
+  "version": "0.0.5",
+  "description": "Code review with specialist reviewers and runtime reproducers, plus guided eval and benchmark task walkthroughs",
   "author": {
     "name": "stbenjam"
   }

@@ -1,15 +1,15 @@
 {
   "name": "reviews",
-  "version": "0.0.4",
-  "description": "Multi-agent panel code review with specialist reviewers and runtime reproducers",
+  "version": "0.0.5",
+  "description": "Code review with specialist reviewers and runtime reproducers, plus guided eval and benchmark task walkthroughs",
   "author": {
     "name": "stbenjam"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "Reviews",
-    "shortDescription": "Run a deep, evidence-backed code review.",
-    "longDescription": "Coordinate specialist reviewers, verify blocking findings with runtime reproducers, and optionally post a pending review.",
+    "shortDescription": "Review code or understand an eval task.",
+    "longDescription": "Coordinate specialist code reviewers and runtime reproducers, or explore benchmark tasks, verifiers, and rubrics with a guided knowledge check.",
     "developerName": "stbenjam",
     "category": "Developer Tools",
     "capabilities": [

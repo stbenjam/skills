@@ -1,0 +1,4 @@
+interface:
+  display_name: "Task Walkthrough"
+  short_description: "Understand an eval task and check your reasoning."
+  default_prompt: "Use $task-walkthrough to explain this benchmark task and check my understanding one question at a time."

@@ -591,8 +591,8 @@ footer a { color: var(--primary); }
     },
     {
       "name": "reviews",
-      "description": "Multi-agent panel code review with specialist reviewers and runtime reproducers",
-      "version": "0.0.4",
+      "description": "Code review with specialist reviewers and runtime reproducers, plus guided eval and benchmark task walkthroughs",
+      "version": "0.0.5",
       "has_readme": true,
       "commands": [],
       "skills": [
@@ -600,6 +600,12 @@ footer a { color: var(--primary); }
           "name": "deep-review",
           "description": "Use when a deeper level of code review is requested. Multi-agent panel code review with specialist reviewers and forced runtime reproducers for all BLOCKING bug findings. Optionally posts to GitHub/GitLab as a PENDING review.",
           "description_html": "Use when a deeper level of code review is requested. Multi-agent panel code review with specialist reviewers and forced runtime reproducers for all BLOCKING bug findings. Optionally posts to GitHub/GitLab as a PENDING review.",
+          "meta": ""
+        },
+        {
+          "name": "task-walkthrough",
+          "description": "Walk through a Terminal-Bench task, internal eval, or benchmark task PR for a competent CS engineer, explain its verifier and review rubric, then check understanding with one applied question at a time. Use when the user wants to understand or present a task before reviewing it.",
+          "description_html": "Walk through a Terminal-Bench task, internal eval, or benchmark task PR for a competent CS engineer, explain its verifier and review rubric, then check understanding with one applied question at a time. Use when the user wants to understand or present a task before reviewing it.",
           "meta": ""
         }
       ],
