@@ -14,6 +14,8 @@ Code, Codex, and standalone Agent Skills setup.
 ## Usage
 
 Invoke the `pr-loop` skill with a full GitHub pull request URL, or ask it to
-detect the open pull request for the current branch. The skill defines its own
-termination condition: all CI green, all review comments resolved, the branch
-up to date with its base, and 30 minutes idle — or a hard cap of 25 iterations.
+detect the open pull request for the current branch. It prefers native T3
+scheduled tasks via MCP and falls back to native `Cron*` tools only when T3
+scheduling tools are absent. The skill manages a dynamic schedule with
+exponential backoff and an 8-hour watcher, then removes both when the PR is
+merged or the one-week limit is reached.

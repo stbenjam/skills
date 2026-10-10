@@ -16,7 +16,10 @@ e2e jobs, do not poll on the fast 2-3 minute cycle. Instead, use
 the scheduling rule below.
 
 **Override Step 5.3 (backoff schedule):** schedule the next
-iteration for **1 hour later** via `CronCreate` — but only after
+iteration for **1 hour later** using the backend selected in
+Step 1.7 (T3 `update_scheduled_task` with
+`schedule: {"type":"interval","everyMs":3600000}`, or native
+Cron* only when T3 scheduling tools are absent) — but only after
 all review feedback has been addressed. While there are still
 unresolved actionable comments, keep the default 10-minute loop
 so feedback is addressed quickly. Switch to the hourly interval

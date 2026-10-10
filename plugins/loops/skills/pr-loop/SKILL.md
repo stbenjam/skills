@@ -86,7 +86,9 @@ each window is working on.
 
 #### Step 1.5: Record start time
 
-Record current UTC timestamp for backoff schedule calculations.
+On the first run, record the current UTC timestamp for backoff
+schedule calculations. On resumed runs, recover the original
+timestamp from the schedule prompt (Step 1.7).
 
 #### Step 1.6: Load project references
 
@@ -102,20 +104,18 @@ Matching references override the corresponding setup steps and phases.
 
 #### Step 1.7: Schedule the loop
 
-Without `CronList`, `CronCreate`, and `CronDelete`, continue the current
-CI/review cycle and report that recurring monitoring was not installed.
-Do not substitute unrelated page/site automations. Follow Step 5.2's handoff.
+**Prefer native T3 scheduled tasks via MCP.** Read
+[references/scheduling.md](references/scheduling.md) for discovery,
+setup, rescheduling, and cleanup. Use native `Cron*` tools only
+when T3 scheduling tools are absent; a runtime error is not a
+reason to switch backends. Project overrides use the selected backend.
 
-Check `CronList` — if pr-loop crons already exist for this PR,
-skip. Otherwise create two crons:
+Maintain a dynamic schedule (initially every 10 minutes) and an
+8-hour watcher.
 
-1. **Dynamic cron** — `CronCreate` at the initial 10-minute
-   interval. This gets deleted and recreated at each iteration
-   as the backoff schedule progresses (Step 5.3).
-2. **Watcher cron** — `CronCreate` at a fixed 8-hour interval.
-   This is a permanent safety net that ensures the loop always
-   wakes up even if the dynamic cron fails to be scheduled.
-   Only cancelled at termination (Step 5.4).
+Without either scheduler, continue the current CI/review cycle and
+report that recurring monitoring was not installed. Do not substitute
+unrelated page/site automations. Follow Step 5.2's handoff.
 
 ### Phase 2 — Rebase Check
 
@@ -284,13 +284,14 @@ checks. When only CI or human review/merge remains, report PR/check/comment
 status and that no recurring monitoring is running. Preserve the worktree
 for a later invocation, then end without claiming merger or timeout.
 
-Delete the **dynamic** cron (`CronList` + `CronDelete`), then
-create a new one at the appropriate interval. Do not touch the
-8-hour watcher cron.
-
 **Actionable items remain** (comments, CI to fix): go back to
 Phase 3 immediately.
 **Only waiting** (pending CI, approval): use backoff schedule.
+
+Adjust only the **dynamic** schedule to the interval in Step 5.3,
+following the scheduling reference. T3 updates the task in place;
+the Cron* fallback deletes and recreates the job. Leave the
+8-hour watcher unchanged.
 
 #### Step 5.3: Exponential backoff
 
@@ -310,7 +311,8 @@ override.
 
 #### Step 5.4: Terminate
 
-1. `CronDelete` both the dynamic and watcher crons
+1. Delete this PR's dynamic and watcher schedules with the
+   selected backend, following the scheduling reference.
 2. Clean up the worktree:
    ```bash
    git worktree remove .worktrees/pr-<pr_number>
