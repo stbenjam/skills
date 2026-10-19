@@ -18,7 +18,7 @@
       "name": "reviews",
       "source": "./plugins/reviews",
       "description": "Code review with specialist reviewers and runtime reproducers, plus guided eval and benchmark task walkthroughs",
-      "version": "0.0.6"
+      "version": "0.0.7"
     },
     {
       "name": "rules",

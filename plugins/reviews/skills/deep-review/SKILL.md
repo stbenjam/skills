@@ -173,7 +173,9 @@ Perform synthesis directly in the main agent (not a sub-agent).
 
 1. **Deduplicate** — merge duplicates, keep strongest reproducer
 2. **Filter noise** — remove false positives, style nitpicks,
-   speculative findings, and issues already addressed in the branch
+   speculative findings, and issues already addressed in the branch.
+   Never drop a finding as pre-existing when the change makes it
+   reachable on a path it adds
 3. **Resolve conflicts** — corroboration strengthens. Unresolved adversarial
    blockers carry forward; new adversarial concerns must meet the current
    round's threshold

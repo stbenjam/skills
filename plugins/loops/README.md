@@ -18,4 +18,4 @@ detect the open pull request for the current branch. It prefers native T3
 scheduled tasks via MCP and falls back to native `Cron*` tools only when T3
 scheduling tools are absent. The skill manages a dynamic schedule with
 exponential backoff and an 8-hour watcher, then removes both when the PR is
-merged or the one-week limit is reached.
+merged, a maintainer takes it over, or the one-week limit is reached.

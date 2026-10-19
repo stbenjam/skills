@@ -1,6 +1,6 @@
 {
   "name": "reviews",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Code review with specialist reviewers and runtime reproducers, plus guided eval and benchmark task walkthroughs",
   "author": {
     "name": "stbenjam"

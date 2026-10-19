@@ -33,3 +33,18 @@ Follow the repository's AGENTS.md: run focused tests, lint, and typechecking
 for changed code. Do not run repository-wide checks unless requested. If a
 history-only rewrite leaves the tree identical to the already validated
 commit, verify that equality rather than rerunning the same checks.
+
+## Before and after screenshots
+
+For PRs with user-visible changes, verify the feature in dev instances and
+add before (base branch) and after (PR branch) screenshots to the PR. The
+user grants standing permission for this, so do not ask before starting dev
+servers or browsers as AGENTS.md otherwise requires. Backend-only PRs need
+no screenshots.
+
+Run `vp run dev` from the worktree so state stays in its `.t3`, and seed real
+data with `vp run migrate-dev-db` while the server is stopped. Never point at
+`~/.t3/userdata`, never set `VITE_HTTP_URL` or `VITE_WS_URL`, and stop only
+the PIDs you started. Use the `test-t3-app` (web) and `test-t3-mobile`
+(mobile) skills where they apply. Upload screenshots to GitHub for the PR
+body or a comment; never commit them.
