@@ -15,6 +15,7 @@ Share skills through `~/.agents/skills` instead of installing plugins or marketp
 
 - `stbenjam/skills`: every skill in the `loops`, `reviews`, `rules`, `steering`, and `skills` plugins
 - `mattpocock/skills`: `grill-me` and its `grilling` dependency
+- `addyosmani/agent-skills`: `idea-refine`
 
 ## Steps
 
