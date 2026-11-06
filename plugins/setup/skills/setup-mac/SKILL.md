@@ -5,6 +5,7 @@ license: MIT
 metadata:
   author: stbenjam
   version: "0.1.0"
+disable-model-invocation: true
 ---
 
 # Set up a Mac
