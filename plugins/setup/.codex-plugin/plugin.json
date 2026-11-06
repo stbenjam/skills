@@ -1,15 +1,15 @@
 {
   "name": "setup",
   "version": "0.4.0",
-  "description": "Give every local agent (Claude Code, Codex, Grok, Muse) and profile the same skills and working principles.",
+  "description": "Skills for setting things up the way stbenjam likes them, such as giving every local agent the same skills and working principles.",
   "author": {
     "name": "stbenjam"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "Skills",
-    "shortDescription": "Sync plugins across local agents.",
-    "longDescription": "Give every local agent (Claude Code, Codex, Grok, Muse) and profile the same skills and working principles.",
+    "shortDescription": "Set things up the way stbenjam likes them.",
+    "longDescription": "Skills for setting things up the way stbenjam likes them, such as giving every local agent the same skills and working principles.",
     "developerName": "stbenjam",
     "category": "Developer Tools",
     "capabilities": [],
