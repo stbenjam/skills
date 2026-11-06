@@ -22,6 +22,6 @@ Share skills through `~/.agents/skills` instead of installing plugins or marketp
 2. Symlink each listed skill directory from those checkouts into `~/.agents/skills/<skill>`. Don't copy. If two skills have the same name, report it instead of overwriting.
 3. Find every agent home, e.g. `~/.claude*`, `~/.codex*`, `~/.grok*`, `~/.muse*`, `CLAUDE_CONFIG_DIR`, `CODEX_HOME`. Skip leftovers with no config file.
 4. For each agent that doesn't read `~/.agents/skills` itself (Claude doesn't; Codex does), symlink each skill into that home's skills directory.
-5. If a listed plugin from these repos is also installed as a plugin, uninstall it and remove its marketplace, so skills don't appear twice.
+5. Clean up old installs so skills don't appear twice: in every agent home, uninstall plugins from the listed repos, remove their marketplaces, and delete old copies or dangling symlinks of listed skills.
 6. List other plugins, marketplaces, and skills. Ignore built-ins that ship with the agent or sync from its account, such as Claude's official marketplace or Codex's curated one. For each extra, ask the user: remove it everywhere, or open a PR to `stbenjam/skills` adding it to this list.
 7. Report what changed per agent home. Running sessions need a restart.
