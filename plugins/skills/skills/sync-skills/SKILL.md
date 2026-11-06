@@ -1,23 +1,28 @@
 ---
 name: sync-skills
-description: Use when asked to set up, sync, or update skills and plugins across all local AI agents (Claude Code, Codex, Grok, Muse, and their work/personal profiles) so every agent has the same up-to-date set.
+description: Use when asked to set up, sync, or update skills across all local AI agents (Claude Code, Codex, Grok, Muse, and their work/personal profiles) so every agent has the same up-to-date set.
 license: MIT
 metadata:
   author: stbenjam
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Sync skills across local agents
 
-## Plugins everyone gets
+Share skills through `~/.agents/skills` instead of installing plugins or marketplaces.
 
-- `stbenjam/skills` marketplace: `loops`, `reviews`, `rules`, `steering`, `skills`
-- `mattpocock/skills` marketplace: `mattpocock-skills`
+## Skills everyone gets
+
+- `stbenjam/skills`: every skill in the `loops`, `reviews`, `rules`, `steering`, and `skills` plugins
+- `mattpocock/skills`: `grill-me` and its `grilling` dependency
+- `addyosmani/agent-skills`: `idea-refine`, `code-simplification`
 
 ## Steps
 
-1. Find every agent home on this host, e.g. `~/.claude*`, `~/.codex*`, `~/.grok*`, `~/.muse*`, and `CLAUDE_CONFIG_DIR` or `CODEX_HOME`. Skip leftovers with no config file.
-2. For each home, use the agent's own plugin CLI pointed at that home (check `--help`). Add the marketplaces, install anything missing, and update what's already installed to the latest version.
-3. If an agent has no plugin support, symlink each plugin's `skills/*` directories into `~/.agents/skills` from a marketplace git checkout (not a versioned plugin cache), then symlink them from `~/.agents/skills` into that agent's skills directory. Don't copy: links stay current when plugins update.
-4. List plugins and marketplaces that aren't on the list above. For each, ask the user: remove it everywhere, or open a PR to `stbenjam/skills` adding it to this list.
-5. Report a table of agent home × plugin with versions. Note that running sessions need a restart.
+1. Clone each repo above to `~/.agents/src/<owner>/<repo>`, or `git pull` it if it's already there.
+2. Symlink each listed skill directory from those checkouts into `~/.agents/skills/<skill>`. Don't copy. If two skills have the same name, report it instead of overwriting.
+3. Find every agent home, e.g. `~/.claude*`, `~/.codex*`, `~/.grok*`, `~/.muse*`, `CLAUDE_CONFIG_DIR`, `CODEX_HOME`. Skip leftovers with no config file.
+4. For each agent that doesn't read `~/.agents/skills` itself (Claude doesn't; Codex does), symlink each skill into that home's skills directory.
+5. Clean up old installs so skills don't appear twice: in every agent home, uninstall plugins from the listed repos, remove their marketplaces, and delete old copies or dangling symlinks of listed skills.
+6. List other plugins, marketplaces, and skills. Ignore built-ins that ship with the agent or sync from its account, such as Claude's official marketplace or Codex's curated one. For each extra, ask the user: remove it everywhere, or open a PR to `stbenjam/skills` adding it to this list.
+7. Report what changed per agent home. Running sessions need a restart.

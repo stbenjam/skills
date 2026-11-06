@@ -2,7 +2,7 @@
   "": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "skills",
   "description": "Sync the same skills and plugins across every local agent (Claude Code, Codex, Grok, Muse) and profile.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "stbenjam"
   }
