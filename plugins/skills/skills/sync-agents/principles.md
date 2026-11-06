@@ -24,11 +24,16 @@ Make the smallest change that meets the goal. A few-line fix stays a few
 lines. Editing a doc doesn't mean expanding it. If the right change is larger
 than the ask, say why before making it.
 
-## One mechanism, not many special cases
+## Maintainable over clever
 
-When the same problem shows up in more than one place, fix the mechanism
-instead of each instance. Prefer one interface with adapters over parallel
-functions, and an enum over a growing set of boolean flags.
+Design from first principles, not from whatever pattern is nearest. Keep
+parallel things symmetric: same names, same shape, same place. Ask where the
+feature is likely to go and pick a shape that can grow there, such as one
+interface with adapters instead of parallel functions, or an enum instead of
+a growing set of boolean flags. When the same problem shows up twice, fix the
+mechanism, not each instance. Shape for the future, but build only what's
+asked. Clarity beats a contrived solution: if the design needs a long
+explanation, simplify it.
 
 ## Verify the real thing
 
