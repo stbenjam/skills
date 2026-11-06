@@ -1,6 +1,6 @@
 {
-  "name": "skills",
-  "version": "0.3.0",
+  "name": "setup",
+  "version": "0.4.0",
   "description": "Give every local agent (Claude Code, Codex, Grok, Muse) and profile the same skills and working principles.",
   "author": {
     "name": "stbenjam"

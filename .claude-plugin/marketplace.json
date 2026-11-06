@@ -51,8 +51,8 @@
       "description": "Eliminate everyday friction through direct action, delegation, specialist services, or automation within explicit authorization boundaries."
     },
     {
-      "name": "skills",
-      "source": "./plugins/skills",
+      "name": "setup",
+      "source": "./plugins/setup",
       "description": "Give every local agent (Claude Code, Codex, Grok, Muse) and profile the same skills and working principles."
     }
   ]

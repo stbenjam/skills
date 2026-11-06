@@ -1,4 +1,4 @@
-# skills
+# setup
 
 Give every local agent the same skills and working principles: Claude Code, Codex, Grok, Muse, and their work/personal profiles.
 

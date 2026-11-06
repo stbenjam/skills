@@ -101,10 +101,10 @@
       "category": "Productivity"
     },
     {
-      "name": "skills",
+      "name": "setup",
       "source": {
         "source": "local",
-        "path": "./plugins/skills"
+        "path": "./plugins/setup"
       },
       "policy": {
         "installation": "AVAILABLE",
