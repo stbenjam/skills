@@ -12,7 +12,7 @@ metadata:
 ## Plugins everyone gets
 
 - `stbenjam/skills` marketplace: `loops`, `reviews`, `rules`, `steering`, `skills`
-- `mattpocock/skills` marketplace: `mattpocock-skills`
+- `mattpocock/skills` repo: only the `grill-me` skill and its `grilling` dependency, linked as in step 3 for every agent; don't install the whole plugin
 
 ## Steps
 
