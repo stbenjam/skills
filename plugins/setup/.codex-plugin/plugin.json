@@ -1,0 +1,18 @@
+{
+  "name": "setup",
+  "version": "0.4.0",
+  "description": "Skills for setting things up the way stbenjam likes them, such as giving every local agent the same skills and working principles.",
+  "author": {
+    "name": "stbenjam"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Skills",
+    "shortDescription": "Set things up the way stbenjam likes them.",
+    "longDescription": "Skills for setting things up the way stbenjam likes them, such as giving every local agent the same skills and working principles.",
+    "developerName": "stbenjam",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Sync my skills and plugins across all my local agents."
+  }
+}

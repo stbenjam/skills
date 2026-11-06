@@ -4,7 +4,9 @@ description: Use when asked to set up, sync, or update all local AI agents (Clau
 license: MIT
 metadata:
   author: stbenjam
-  version: "0.3.0"
+  version: "0.4.0"
+user-invocable: true
+disable-model-invocation: true
 ---
 
 # Sync local agents
@@ -13,7 +15,7 @@ Give every local agent the same skills, shared through `~/.agents/skills` instea
 
 ## Skills everyone gets
 
-- `stbenjam/skills`: every skill in the `loops`, `reviews`, `rules`, `steering`, and `skills` plugins
+- `stbenjam/skills`: every skill in the `loops`, `reviews`, `rules`, `steering`, and `setup` plugins
 - `mattpocock/skills`: `grill-me` and its `grilling` dependency
 - `addyosmani/agent-skills`: `idea-refine`, `code-simplification`
 
