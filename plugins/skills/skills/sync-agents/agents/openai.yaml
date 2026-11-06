@@ -1,0 +1,7 @@
+interface:
+  display_name: "Sync Agents"
+  short_description: "Give every local agent the same skills and principles."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#0f766e"
+  default_prompt: "Use $sync-agents to set up all my local agents."
