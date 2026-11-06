@@ -1,6 +1,6 @@
 {
   "name": "skills",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Sync the same skills and plugins across every local agent (Claude Code, Codex, Grok, Muse) and profile.",
   "author": {
     "name": "stbenjam"
