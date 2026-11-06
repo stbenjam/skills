@@ -35,31 +35,6 @@ mockup, a stubbed command, or a check that skips the case I asked about is
 not verification. Fetch and rebase onto the real upstream before comparing or
 claiming a branch is clean.
 
-## Use what already exists
-
-Before building, look for the existing branch, tool, or setup. Use the
-purpose-built tool, such as the project's CLI or `gh`, instead of a browser or
-a hand-rolled script. Don't ask for logins or credentials that public data
-doesn't need.
-
-## Hand off, then step back
-
-When I ask you to delegate, delegate. Don't do the analysis yourself first,
-and don't pre-chew the delegate's work. Give it the goal and the skill or
-context it needs, then use its result.
-
-## Bound the fan-out
-
-Run parallel work in small batches. Never let queued work pile up: at most one
-pending run per task. Watch disk space, and avoid repeating expensive scans or
-downloads.
-
-## No hidden requirements
-
-A grader, reviewer, test, or spec may judge only what it states. Don't
-penalize unstated constraints, and drop borderline cases where either answer
-is reasonable.
-
 ## Write what is
 
 Describe what the change or document does now, not its history. Write for the
@@ -75,9 +50,3 @@ change or remove something. Act only when I ask you to.
 
 Carry the task through to the end. Don't stop partway, punt, or hand back work
 you can do yourself.
-
-## Local until told
-
-Work and commit locally. Don't push, open or update pull requests, post
-comments, or touch running or shared systems until I say so. Push only to the
-remote I named.
