@@ -18,6 +18,6 @@ metadata:
 
 1. Find every agent home on this host, e.g. `~/.claude*`, `~/.codex*`, `~/.grok*`, `~/.muse*`, and `CLAUDE_CONFIG_DIR` or `CODEX_HOME`. Skip leftovers with no config file.
 2. For each home, use the agent's own plugin CLI pointed at that home (check `--help`). Add the marketplaces, install anything missing, and update what's already installed to the latest version.
-3. If an agent has no plugin support, symlink each plugin's `skills/*` directories into `~/.agents/skills`, then symlink them from `~/.agents/skills` into that agent's skills directory. Don't copy: links stay current when plugins update.
+3. If an agent has no plugin support, symlink each plugin's `skills/*` directories into `~/.agents/skills` from a marketplace git checkout (not a versioned plugin cache), then symlink them from `~/.agents/skills` into that agent's skills directory. Don't copy: links stay current when plugins update.
 4. List plugins and marketplaces that aren't on the list above. For each, ask the user: remove it everywhere, or open a PR to `stbenjam/skills` adding it to this list.
 5. Report a table of agent home × plugin with versions. Note that running sessions need a restart.
