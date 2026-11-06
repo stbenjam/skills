@@ -1,0 +1,18 @@
+{
+  "name": "skills",
+  "version": "0.1.0",
+  "description": "Sync the same skills and plugins across every local agent (Claude Code, Codex, Grok, Muse) and profile.",
+  "author": {
+    "name": "stbenjam"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Skills",
+    "shortDescription": "Sync plugins across local agents.",
+    "longDescription": "Sync the same skills and plugins across every local agent (Claude Code, Codex, Grok, Muse) and profile.",
+    "developerName": "stbenjam",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Sync my skills and plugins across all my local agents."
+  }
+}

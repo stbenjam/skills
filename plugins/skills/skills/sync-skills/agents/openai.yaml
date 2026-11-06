@@ -1,0 +1,7 @@
+interface:
+  display_name: "Sync Skills"
+  short_description: "Keep every local agent's plugins in sync."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#0f766e"
+  default_prompt: "Use $sync-skills to sync plugins across all my local agents."

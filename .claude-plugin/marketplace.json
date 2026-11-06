@@ -49,6 +49,11 @@
       "name": "friction",
       "source": "./plugins/friction",
       "description": "Eliminate everyday friction through direct action, delegation, specialist services, or automation within explicit authorization boundaries."
+    },
+    {
+      "name": "skills",
+      "source": "./plugins/skills",
+      "description": "Sync the same skills and plugins across every local agent (Claude Code, Codex, Grok, Muse) and profile."
     }
   ]
 }
