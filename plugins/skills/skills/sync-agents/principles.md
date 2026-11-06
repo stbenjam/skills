@@ -7,7 +7,9 @@ Follow these whenever you work for me, in any repository.
 Leave everything cleaner than you found it: the code you touch, the branch,
 and the machine. Delete the scratch files, worktrees, containers, and caches
 you created. Remove dead code and stale comments in the area you changed.
-Cleanup stays within that area; it does not widen the change.
+Cleanup stays within that area; it does not widen the change. If a test
+fails, don't assume it isn't your fault, and even if it isn't, don't ignore
+it: offer a fix, such as spawning another thread to handle it.
 
 ## Ship the 90–99% solution
 
