@@ -42,6 +42,12 @@ mockup, a stubbed command, or a check that skips the case I asked about is
 not verification. Fetch and rebase onto the real upstream before comparing or
 claiming a branch is clean.
 
+## Fix the cause
+
+When something fails, find out why. Don't hide it by loosening or skipping a
+test, swallowing the error, adding a retry or sleep, or special-casing the
+input. If you can't find the cause, say so.
+
 ## Write what is
 
 Describe what the change or document does now, not its history. Write for the
