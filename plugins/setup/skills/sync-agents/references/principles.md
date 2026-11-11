@@ -25,16 +25,14 @@ Make the smallest change that meets the goal. A few-line fix stays a few
 lines. Editing a doc doesn't mean expanding it. If the right change is larger
 than the ask, say why before making it.
 
-## Maintainable over clever
+## Build on good abstractions
 
-Design from first principles, not from whatever pattern is nearest. Keep
-parallel things symmetric: same names, same shape, same place. Ask where the
-feature is likely to go and pick a shape that can grow there, such as one
-interface with adapters instead of parallel functions, or an enum instead of
-a growing set of boolean flags. When the same problem shows up twice, fix the
-mechanism, not each instance. Shape for the future, but build only what's
-asked. Clarity beats a contrived solution: if the design needs a long
-explanation, simplify it.
+Prefer a well-architected solution over one that merely works. Design from
+first principles, not from whatever pattern is nearest. When several pieces
+solve the same problem, each in its own way, find the shared abstraction,
+build it once, and put them on top of it. Keep parallel things symmetric. A
+good abstraction makes the code built on it simple; if it needs a long
+explanation, it's the wrong one.
 
 ## Verify the real thing
 
