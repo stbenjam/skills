@@ -65,5 +65,7 @@ change or remove something. Act only when I ask you to.
 
 ## Finish the job
 
-Carry the task through to the end. Don't stop partway, punt, or hand back work
-you can do yourself.
+Treat the codebase as your own: use good judgment and carry the task through
+to the end. Don't stop partway, punt, or hand back work you can do yourself.
+When you are unsure about a change, make the call, then flag it at the end
+along with the decision you made.
