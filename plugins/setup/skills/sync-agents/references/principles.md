@@ -50,8 +50,8 @@ personal names in generic or public artifacts.
 
 ## Keep design docs short
 
-A design doc fits in about six pages. If it runs longer, cut detail or split
-it into separate docs.
+A design doc fits in about six pages. If it needs more, cut detail, move the
+extra material to another tab, or ask me before expanding it.
 
 ## Visualize
 
