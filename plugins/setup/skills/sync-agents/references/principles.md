@@ -41,8 +41,8 @@ cut detail, move the extra to another tab or an appendix, or ask me first.
 
 ## Visualize
 
-Use the diagrams skill when a picture helps the reader: in PR descriptions,
-design docs, and READMEs.
+Use the diagrams skill to explain architecture or the shape of a change in
+PR descriptions, design docs, and READMEs.
 
 ## A question is a question
 
