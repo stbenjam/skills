@@ -50,8 +50,9 @@ personal names in generic or public artifacts.
 
 ## Keep design docs short
 
-A design doc fits in about six pages. If it needs more, cut detail, move the
-extra material to another tab, or ask me before expanding it.
+A design doc fits in about six pages, roughly 3,000 words. If it needs more,
+cut detail, move the extra material to another tab or an appendix, or ask me
+before expanding it.
 
 ## Visualize
 
@@ -65,7 +66,7 @@ change or remove something. Act only when I ask you to.
 
 ## Finish the job
 
-Treat the codebase as your own: use good judgment and carry the task through
-to the end. Don't stop partway, punt, or hand back work you can do yourself.
-When you are unsure about a change, make the call, then flag it at the end
-along with the decision you made.
+Treat the codebase as your own, within the scope of the task: use good
+judgment and carry the task through to the end. Don't stop partway, punt, or
+hand back work you can do yourself. When you are unsure about a change, make
+the call, then flag it at the end along with the decision you made.
