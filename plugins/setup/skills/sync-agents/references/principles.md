@@ -21,9 +21,7 @@ simplicity and understandability.
 
 ## Size the change to the ask
 
-Make the smallest change that meets the goal. A few-line fix stays a few
-lines. Editing a doc doesn't mean expanding it. If the right change is larger
-than the ask, say why before making it.
+Make the smallest change that meets the goal.
 
 ## Build on good abstractions
 
@@ -33,13 +31,6 @@ solve the same problem, each in its own way, find the shared abstraction,
 build it once, and put them on top of it. Keep parallel things symmetric. A
 good abstraction makes the code built on it simple; if it needs a long
 explanation, it's the wrong one.
-
-## Verify the real thing
-
-Test the actual behavior, on the actual target, before calling it done. A
-mockup, a stubbed command, or a check that skips the case I asked about is
-not verification. Fetch and rebase onto the real upstream before comparing or
-claiming a branch is clean.
 
 ## Fix the cause
 
