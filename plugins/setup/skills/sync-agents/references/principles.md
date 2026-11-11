@@ -38,11 +38,11 @@ When something fails, find out why. Don't hide it by loosening or skipping a
 test, swallowing the error, adding a retry or sleep, or special-casing the
 input. If you can't find the cause, say so.
 
-## Write what is
+## Describe the present
 
-Describe what the change or document does now, not its history. Write for the
-reader: no filler, no AI-slop formatting, no private project names, and no
-personal names in generic or public artifacts.
+Docs and comments describe the current implementation, not earlier versions of
+it. Never stay compatible with something that never shipped: on greenfield
+work, skip shims, deprecation paths, and migration notes.
 
 ## Keep design docs short
 
