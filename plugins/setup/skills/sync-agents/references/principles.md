@@ -48,6 +48,16 @@ Describe what the change or document does now, not its history. Write for the
 reader: no filler, no AI-slop formatting, no private project names, and no
 personal names in generic or public artifacts.
 
+## Keep design docs short
+
+A design doc fits in about six pages. If it runs longer, cut detail or split
+it into separate docs.
+
+## Visualize
+
+Use the diagrams skill to draw a picture when it helps the reader understand
+the change: in PR descriptions, design docs, and READMEs.
+
 ## A question is a question
 
 When I ask a question, answer it. Don't take it as a hidden instruction to
