@@ -32,8 +32,7 @@ there.
 ## Describe the present
 
 Docs and comments describe the current implementation, not earlier versions of
-it. Never stay compatible with something that never shipped: on greenfield
-work, skip shims, deprecation paths, and migration notes.
+it. Never stay compatible with something that never shipped.
 
 ## Keep design docs short
 
