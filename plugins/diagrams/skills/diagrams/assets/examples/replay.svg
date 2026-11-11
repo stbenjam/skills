@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 568 375" width="568" height="375" font-family="'Google Sans Code', 'Adwaita Mono', 'DejaVu Sans Mono', monospace" font-size="12">
+<style>
+.frame{fill:#ffffff;stroke:#e4e4e7;stroke-width:1}.caption{fill:#09090b;font-size:14.5px;font-weight:700;letter-spacing:.02em}.zone{fill:#f4f4f5;stroke:#e4e4e7;stroke-width:1}.node{fill:#d7d7d8;stroke:#71717b;stroke-width:1}.solid{fill:#09090b;stroke:#09090b;stroke-width:1}.dashed{fill:#ffffff;stroke:#71717b;stroke-width:1;stroke-dasharray:4 3}.dotted{fill:#ffffff;stroke:#71717b;stroke-width:1;stroke-dasharray:1 3;stroke-linecap:round}.flow{fill:none;stroke:#71717b;stroke-width:1}.head{fill:#71717b;stroke:none}.label{fill:#09090b}.inverse{fill:#ffffff}
+@media (prefers-color-scheme: dark){.frame{fill:#09090b;stroke:#2e2e2e;stroke-width:1}.caption{fill:#fafafa;font-size:14.5px;font-weight:700;letter-spacing:.02em}.zone{fill:#27272a;stroke:#2e2e2e;stroke-width:1}.node{fill:#2f2f31;stroke:#9f9fa9;stroke-width:1}.solid{fill:#fafafa;stroke:#fafafa;stroke-width:1}.dashed{fill:#09090b;stroke:#9f9fa9;stroke-width:1;stroke-dasharray:4 3}.dotted{fill:#09090b;stroke:#9f9fa9;stroke-width:1;stroke-dasharray:1 3;stroke-linecap:round}.flow{fill:none;stroke:#9f9fa9;stroke-width:1}.head{fill:#9f9fa9;stroke:none}.label{fill:#fafafa}.inverse{fill:#09090b}}
+</style>
+<defs><marker id="head" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1L7 4L1 7Z" class="head"/></marker></defs>
+<rect x="0.5" y="0.5" width="567" height="374" class="frame"/>
+<text x="24" y="32.5" class="caption">replay with a cached response</text>
+<g transform="translate(24 43)">
+<g opacity="0.3">
+<rect x="18" y="24" width="230" height="182" class="zone"/>
+<text x="34" y="48" text-anchor="start" class="label">client</text>
+</g>
+<rect x="272" y="24" width="230" height="182" class="zone"/>
+<text x="288" y="48" text-anchor="start" class="label">server</text>
+<rect x="18" y="230" width="484" height="56" class="zone"/>
+<text x="260.0" y="262" text-anchor="middle" class="label">host</text>
+<polyline points="387,230 387,166" class="flow" marker-end="url(#head)"/>
+<rect x="317" y="128" width="140" height="38" class="node"/>
+<text x="387.0" y="151" text-anchor="middle" class="label">cached response</text>
+</g></svg>
