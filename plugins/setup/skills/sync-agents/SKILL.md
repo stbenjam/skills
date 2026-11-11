@@ -4,7 +4,7 @@ description: Use when asked to set up, sync, or update all local AI agents (Clau
 license: MIT
 metadata:
   author: stbenjam
-  version: "0.4.0"
+  version: "0.5.0"
 user-invocable: true
 disable-model-invocation: true
 ---
@@ -15,7 +15,7 @@ Give every local agent the same skills, shared through `~/.agents/skills` instea
 
 ## Skills everyone gets
 
-- `stbenjam/skills`: every skill in the `loops`, `reviews`, `rules`, `steering`, and `setup` plugins
+- `stbenjam/skills`: every skill in the `diagrams`, `loops`, `reviews`, `rules`, `steering`, and `setup` plugins
 - `mattpocock/skills`: `grill-me` and its `grilling` dependency
 - `addyosmani/agent-skills`: `idea-refine`, `code-simplification`
 
@@ -23,7 +23,7 @@ Give every local agent the same skills, shared through `~/.agents/skills` instea
 
 1. Clone each repo above to `~/.agents/src/<owner>/<repo>`, or `git pull` it if it's already there.
 2. Symlink each listed skill directory from those checkouts into `~/.agents/skills/<skill>`. Don't copy. If two skills have the same name, report it instead of overwriting.
-3. Find every agent home, e.g. `~/.claude*`, `~/.codex*`, `~/.grok*`, `~/.muse*`, `~/.config/muse*`, `CLAUDE_CONFIG_DIR`, `CODEX_HOME`. Skip leftovers with no config file.
+3. Find every agent home, e.g. `~/.claude*`, `~/.codex`, `~/.grok*`, `~/.muse*`, `~/.config/muse*`, `CLAUDE_CONFIG_DIR`, `CODEX_HOME`. Treat each `~/.claude-*` directory as its own agent home. Skip `~/.codex-*` directories: T3 Code shadows them and every Codex profile shares `~/.codex`. Skip leftovers with no config file.
 4. For each agent that doesn't read `~/.agents/skills` itself (Claude doesn't; Codex and Grok do), symlink each skill into that home's skills directory.
 5. Install the principles. Read [principles.md](principles.md) and put its contents in each agent home's global instructions file: `CLAUDE.md` for Claude, `AGENTS.md` for Codex and Grok, and whatever file the agent's docs name for the rest. Wrap it in `<!-- BEGIN stbenjam/skills principles -->` and `<!-- END stbenjam/skills principles -->`, replacing any existing block between those markers. Leave the rest of the file alone. Load the block once per agent: if an agent also reads another agent's file (Grok reads `~/.claude/CLAUDE.md`), don't give it a second copy. Skip files managed by an organization policy.
 6. Clean up old installs so skills don't appear twice: in every agent home, uninstall plugins from the listed repos, remove their marketplaces, and delete old copies or dangling symlinks of listed skills, including cached plugin copies.

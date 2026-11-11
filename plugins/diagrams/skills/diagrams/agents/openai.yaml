@@ -1,0 +1,7 @@
+interface:
+  display_name: "Diagrams"
+  short_description: "Draw box diagrams for design docs."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#70707A"
+  default_prompt: "Use $diagrams to draw an architecture diagram for this design doc."

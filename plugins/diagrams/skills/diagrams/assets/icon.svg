@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Diagrams">
+  <rect width="128" height="128" rx="28" fill="#f3f3f3" stroke="#e2e2e2" stroke-width="4"/>
+  <rect x="20" y="36" width="36" height="24" fill="#d9d9d9"/>
+  <rect x="72" y="68" width="36" height="24" fill="#d9d9d9"/>
+  <polyline points="56,48 64,48 64,80 70,80" fill="none" stroke="#70707a" stroke-width="3"/>
+  <path d="M68,74 L76,80 L68,86 z" fill="#70707a"/>
+</svg>
