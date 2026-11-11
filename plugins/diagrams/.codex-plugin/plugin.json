@@ -1,0 +1,18 @@
+{
+  "name": "diagrams",
+  "version": "0.1.0",
+  "description": "Hand-laid-out black-and-white box diagrams for design docs, rendered to SVG and PNG with a tiny Python shape DSL.",
+  "author": {
+    "name": "stbenjam"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Diagrams",
+    "shortDescription": "Draw box diagrams for design docs.",
+    "longDescription": "Hand-laid-out black-and-white box diagrams for design docs, rendered to SVG and PNG with a tiny Python shape DSL.",
+    "developerName": "stbenjam",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "Use $diagrams to draw an architecture diagram for this design doc."
+  }
+}

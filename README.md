@@ -21,6 +21,7 @@ Shared skills and plugins for Claude Code and Codex by stbenjam.
 | Plugin | Description |
 | --- | --- |
 | [books](plugins/books/) | Search and analyze a Calibre library or Goodreads export |
+| [diagrams](plugins/diagrams/) | Hand-laid-out black-and-white box diagrams for design docs, rendered to SVG and PNG with a tiny Python shape DSL. |
 | [friction](plugins/friction/) | Eliminate everyday friction through direct action, delegation, specialist services, or automation within explicit authorization boundaries. |
 | [hype](plugins/hype/) | Injects a random motivational hype message into every turn via a UserPromptSubmit hook, plus about 10% of PreToolUse calls. |
 | [keepgoing](plugins/keepgoing/) | A Stop hook for Claude Code and Codex that requests one final completion pass, with an opt-in infinite mode. |

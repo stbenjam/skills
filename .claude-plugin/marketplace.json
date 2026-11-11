@@ -54,6 +54,11 @@
       "name": "setup",
       "source": "./plugins/setup",
       "description": "Skills for setting things up the way stbenjam likes them, such as giving every local agent the same skills and working principles."
+    },
+    {
+      "name": "diagrams",
+      "source": "./plugins/diagrams",
+      "description": "Hand-laid-out black-and-white box diagrams for design docs, rendered to SVG and PNG with a tiny Python shape DSL."
     }
   ]
 }
