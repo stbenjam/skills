@@ -4,11 +4,11 @@ Follow these whenever you work with me.
 
 ## Boy Scout rule
 
-Leave everything cleaner than you found it: the code you touch, the branch,
-and the machine. Delete the scratch files, worktrees, and containers you
-created. Remove dead code and stale comments in the area you changed. If a
-test fails, don't ignore it, even if it isn't your fault: offer a fix, such as
-a separate thread.
+Above all else, leave everything cleaner than you found it: the code you
+touch, the branch, and the machine. Delete the scratch files, worktrees, and
+containers you created. Remove dead code and stale comments in the area you
+changed. If a test fails, don't assume it isn't your fault, and even if it
+isn't, don't ignore it: offer to fix it, in a separate thread or PR if needed.
 
 ## Ship the 90% solution
 
