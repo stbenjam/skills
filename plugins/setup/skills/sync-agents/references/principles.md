@@ -27,14 +27,12 @@ Make the smallest change that meets the goal.
 Prefer a well-architected solution over one that merely works. Design from
 first principles, not from whatever pattern is nearest. When several pieces
 solve the same problem in their own ways, build the shared abstraction once
-and put them on top of it. Keep parallel things symmetric. If an abstraction
-needs a long explanation, it's the wrong one.
+and put them on top of it.
 
 ## Fix the cause
 
-When something fails, find out why. Don't hide it by loosening or skipping a
-test, swallowing the error, adding a retry or sleep, or special-casing the
-input. If you can't find the cause, say so.
+When something fails, follow the root cause wherever it leads and fix it
+there.
 
 ## Describe the present
 
