@@ -1,6 +1,6 @@
 # Working principles
 
-Follow these whenever you work with me, in any repository.
+Follow these whenever you work with me.
 
 ## Boy Scout rule
 
