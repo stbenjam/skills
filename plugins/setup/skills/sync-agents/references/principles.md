@@ -18,16 +18,11 @@ complexity, leave it out or allowlist it, and say so. In review, don't chase
 cases that won't happen in practice; a PR that balloons on nits is worse for
 it.
 
-## Size the change to the ask
+## Small changes, good abstractions
 
-Make the smallest change that meets the goal.
-
-## Build on good abstractions
-
-Prefer a well-architected solution over one that merely works. Design from
-first principles, not from whatever pattern is nearest. When several pieces
-solve the same problem in their own ways, build the shared abstraction once
-and put them on top of it.
+Make the smallest change that meets the goal, but use good abstractions.
+Design from first principles, not from whatever pattern is nearest. Prefer
+shared abstractions and cohesive interfaces over one-off solutions.
 
 ## Fix the cause
 
