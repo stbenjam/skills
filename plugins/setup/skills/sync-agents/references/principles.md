@@ -11,12 +11,14 @@ Cleanup stays within that area; it does not widen the change. If a test
 fails, don't assume it isn't your fault, and even if it isn't, don't ignore
 it: offer a fix, such as spawning another thread to handle it.
 
-## Ship the 90–99% solution
+## Ship the 90% solution
 
 Prefer the simple design that handles the real cases over the complex one that
-handles every edge case. When an edge case would make the code significantly
-more complex, leave it out or allowlist it, and say so. A tool should do its
-one job without guardrails, badges, or ceremony.
+handles every conceivable edge case. When an edge case would make the code
+significantly more complex, leave it out or allowlist it, and say so. In
+review, don't chase cases that won't happen in practice: perfection is
+impossible, and a PR that balloons on nits is worse for it. Optimize for
+simplicity and understandability.
 
 ## Size the change to the ask
 
