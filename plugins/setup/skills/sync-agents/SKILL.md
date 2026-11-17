@@ -15,7 +15,7 @@ Give every local agent the same skills, shared through `~/.agents/skills` instea
 
 ## Skills everyone gets
 
-- `stbenjam/skills`: every skill in the `stevestack`, `reviews`, `steering`, and `setup` plugins
+- `stbenjam/skills`: every skill in the `stevestack`, `benchmarks`, `steering`, and `setup` plugins
 - `addyosmani/agent-skills`: `idea-refine`, `code-simplification`
 
 ## Steps

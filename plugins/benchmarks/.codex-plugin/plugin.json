@@ -1,0 +1,21 @@
+{
+  "name": "benchmarks",
+  "version": "0.1.0",
+  "description": "Skills for benchmark and eval tasks, such as guided walkthroughs of a task, its verifier, and its review rubric.",
+  "author": {
+    "name": "stbenjam"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Benchmarks",
+    "shortDescription": "Understand benchmark and eval tasks.",
+    "longDescription": "Explore benchmark and eval tasks, their verifiers, and their review rubrics with a guided knowledge check.",
+    "developerName": "stbenjam",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": "Walk me through this eval task."
+  }
+}

@@ -17,10 +17,10 @@
       "category": "Productivity"
     },
     {
-      "name": "reviews",
+      "name": "benchmarks",
       "source": {
         "source": "local",
-        "path": "./plugins/reviews"
+        "path": "./plugins/benchmarks"
       },
       "policy": {
         "installation": "AVAILABLE",

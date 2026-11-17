@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "benchmarks",
+  "version": "0.1.0",
+  "description": "Skills for benchmark and eval tasks, such as guided walkthroughs of a task, its verifier, and its review rubric.",
+  "author": {
+    "name": "stbenjam"
+  }
+}

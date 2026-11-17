@@ -1,7 +1,6 @@
-# reviews
+# benchmarks
 
-Code review with specialist reviewers and runtime reproducers, plus guided eval
-and benchmark task walkthroughs.
+Skills for benchmark and eval tasks, such as guided walkthroughs of a task, its verifier, and its review rubric.
 
 See the [main installation guide](../../README.md#installation) for Claude
 Code, Codex, and standalone Agent Skills setup.

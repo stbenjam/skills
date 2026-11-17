@@ -10,10 +10,10 @@
       "description": "Search and analyze a Calibre library or Goodreads export"
     },
     {
-      "name": "reviews",
-      "source": "./plugins/reviews",
-      "description": "Code review with specialist reviewers and runtime reproducers, plus guided eval and benchmark task walkthroughs",
-      "version": "0.0.7"
+      "name": "benchmarks",
+      "source": "./plugins/benchmarks",
+      "description": "Skills for benchmark and eval tasks, such as guided walkthroughs of a task, its verifier, and its review rubric.",
+      "version": "0.1.0"
     },
     {
       "name": "steering",

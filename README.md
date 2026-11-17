@@ -20,12 +20,12 @@ Shared skills and plugins for Claude Code and Codex by stbenjam.
 
 | Plugin | Description |
 | --- | --- |
+| [benchmarks](plugins/benchmarks/) | Skills for benchmark and eval tasks, such as guided walkthroughs of a task, its verifier, and its review rubric. |
 | [books](plugins/books/) | Search and analyze a Calibre library or Goodreads export |
 | [friction](plugins/friction/) | Eliminate everyday friction through direct action, delegation, specialist services, or automation within explicit authorization boundaries. |
 | [hype](plugins/hype/) | Injects a random motivational hype message into every turn via a UserPromptSubmit hook, plus about 10% of PreToolUse calls. |
 | [keepgoing](plugins/keepgoing/) | A Stop hook for Claude Code and Codex that requests one final completion pass, with an opt-in infinite mode. |
 | [openclaw](plugins/openclaw/) | A grab-bag of miscellaneous OpenClaw skills (pollen forecasts, Orangetheory lookups, narrated video reels) with no unifying theme. |
-| [reviews](plugins/reviews/) | Code review with specialist reviewers and runtime reproducers, plus guided eval and benchmark task walkthroughs |
 | [setup](plugins/setup/) | Skills for setting things up the way stbenjam likes them, such as giving every local agent the same skills and working principles. |
 | [steering](plugins/steering/) | Compact conversation-steering skills for changing direction, explaining decisions, asking for clarity, answering questions without implied action, finishing punted work, delegating research to a subagent, tightening prose, executing decisively, rethinking code architecture, and raising frontend quality. |
 | [stevestack](plugins/stevestack/) | Steve's workflow for shipping code: brainstorming, model panels, design docs, working principles, deep review, PR shepherding, diagrams, and Git and test hygiene. |
@@ -46,7 +46,7 @@ want:
 /plugin install steering@stbenjam
 ```
 
-Replace `steering` with `stevestack`, `books`, or `reviews` as needed, then run
+Replace `steering` with `stevestack`, `books`, or `benchmarks` as needed, then run
 `/reload-plugins`.
 
 ### Codex
