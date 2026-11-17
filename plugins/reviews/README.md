@@ -9,7 +9,6 @@ Code, Codex, and standalone Agent Skills setup.
 ## Skills
 
 <!-- BEGIN GENERATED SKILLS -->
-- [`deep-review`](skills/deep-review/SKILL.md) — Use when a deeper level of code review is requested. Multi-agent panel code review with specialist reviewers and forced runtime reproducers for all BLOCKING bug findings. Optionally posts to GitHub/GitLab as a PENDING review.
 - [`task-walkthrough`](skills/task-walkthrough/SKILL.md) — Walk through a Terminal-Bench task, internal eval, or benchmark task PR for a competent CS engineer, explain its verifier and review rubric, then check understanding with one applied question at a time. Use when the user wants to understand or present a task before reviewing it.
 <!-- END GENERATED SKILLS -->
 

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Principles"
+  short_description: "stbenjam's working principles."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#7C3AED"
+  default_prompt: "Use $principles while making this change."

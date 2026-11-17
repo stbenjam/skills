@@ -1,0 +1,10 @@
+interface:
+  display_name: "Ship"
+  short_description: "Take work to an open, deep-reviewed PR."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#1D4ED8"
+  default_prompt: "Use $ship to take this work to an open, reviewed PR."
+
+policy:
+  allow_implicit_invocation: false

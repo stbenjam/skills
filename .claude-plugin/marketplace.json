@@ -10,20 +10,10 @@
       "description": "Search and analyze a Calibre library or Goodreads export"
     },
     {
-      "name": "loops",
-      "source": "./plugins/loops",
-      "description": "Autonomous loops that shepherd work to completion, such as driving a PR to a mergeable state"
-    },
-    {
       "name": "reviews",
       "source": "./plugins/reviews",
       "description": "Code review with specialist reviewers and runtime reproducers, plus guided eval and benchmark task walkthroughs",
       "version": "0.0.7"
-    },
-    {
-      "name": "rules",
-      "source": "./plugins/rules",
-      "description": "Context-specific rules for safe Git operations and rigorous test-failure investigation."
     },
     {
       "name": "steering",
@@ -56,9 +46,9 @@
       "description": "Skills for setting things up the way stbenjam likes them, such as giving every local agent the same skills and working principles."
     },
     {
-      "name": "diagrams",
-      "source": "./plugins/diagrams",
-      "description": "Hand-laid-out black-and-white box diagrams for design docs, rendered to SVG and PNG with a tiny Python shape DSL."
+      "name": "stevestack",
+      "source": "./plugins/stevestack",
+      "description": "Steve's workflow for shipping code: brainstorming, model panels, design docs, working principles, deep review, PR shepherding, diagrams, and Git and test hygiene."
     }
   ]
 }

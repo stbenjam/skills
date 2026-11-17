@@ -1,0 +1,8 @@
+{
+  "name": "stevestack",
+  "description": "Steve's workflow for shipping code: brainstorming, model panels, design docs, working principles, deep review, PR shepherding, diagrams, and Git and test hygiene.",
+  "version": "0.1.0",
+  "author": {
+    "name": "stbenjam"
+  }
+}

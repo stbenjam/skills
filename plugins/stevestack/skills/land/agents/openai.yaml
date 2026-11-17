@@ -1,0 +1,10 @@
+interface:
+  display_name: "Land"
+  short_description: "Merge the PR yourself once it meets the bar."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#15803D"
+  default_prompt: "Use $land to merge this PR once it meets the bar."
+
+policy:
+  allow_implicit_invocation: false

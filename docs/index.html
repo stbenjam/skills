@@ -465,28 +465,6 @@ footer a { color: var(--primary); }
       }
     },
     {
-      "name": "diagrams",
-      "description": "Hand-laid-out black-and-white box diagrams for design docs, rendered to SVG and PNG with a tiny Python shape DSL.",
-      "version": "0.1.0",
-      "has_readme": true,
-      "commands": [],
-      "skills": [
-        {
-          "name": "diagrams",
-          "description": "Draw minimal monospace box diagrams (architecture, trust boundaries, data flow, sequence of steps) for a design doc, RFC, README or slide, rendered to a light-and-dark SVG plus PNGs from hand-placed coordinates with the bundled Python script. Use whenever a document needs a diagram and the ask is for a clean, high-level picture rather than an auto-laid-out graph.",
-          "description_html": "Draw minimal monospace box diagrams (architecture, trust boundaries, data flow, sequence of steps) for a design doc, RFC, README or slide, rendered to a light-and-dark SVG plus PNGs from hand-placed coordinates with the bundled Python script. Use whenever a document needs a diagram and the ask is for a clean, high-level picture rather than an auto-laid-out graph.",
-          "meta": "License: MIT"
-        }
-      ],
-      "agents": [],
-      "hooks": [],
-      "mcp_servers": [],
-      "rules": [],
-      "author": {
-        "name": "stbenjam"
-      }
-    },
-    {
       "name": "friction",
       "description": "Eliminate everyday friction through direct action, delegation, specialist services, or automation within explicit authorization boundaries.",
       "version": "0.1.0",
@@ -556,28 +534,6 @@ footer a { color: var(--primary); }
       }
     },
     {
-      "name": "loops",
-      "description": "Autonomous loops that shepherd work to completion, such as driving a PR to a mergeable state",
-      "version": "0.0.4",
-      "has_readme": true,
-      "commands": [],
-      "skills": [
-        {
-          "name": "pr-loop",
-          "description": "Shepherd a PR: merge base branch, fix CI, address review comments, resolve threads, and monitor until merged. Use when asked to drive a pull request through to merge.",
-          "description_html": "Shepherd a PR: merge base branch, fix CI, address review comments, resolve threads, and monitor until merged. Use when asked to drive a pull request through to merge.",
-          "meta": ""
-        }
-      ],
-      "agents": [],
-      "hooks": [],
-      "mcp_servers": [],
-      "rules": [],
-      "author": {
-        "name": "stbenjam"
-      }
-    },
-    {
       "name": "openclaw",
       "description": "A grab-bag of miscellaneous OpenClaw skills stbenjam uses day to day, with no unifying theme.",
       "version": "0.0.1",
@@ -619,44 +575,10 @@ footer a { color: var(--primary); }
       "commands": [],
       "skills": [
         {
-          "name": "deep-review",
-          "description": "Use when a deeper level of code review is requested. Multi-agent panel code review with specialist reviewers and forced runtime reproducers for all BLOCKING bug findings. Optionally posts to GitHub/GitLab as a PENDING review.",
-          "description_html": "Use when a deeper level of code review is requested. Multi-agent panel code review with specialist reviewers and forced runtime reproducers for all BLOCKING bug findings. Optionally posts to GitHub/GitLab as a PENDING review.",
-          "meta": ""
-        },
-        {
           "name": "task-walkthrough",
           "description": "Walk through a Terminal-Bench task, internal eval, or benchmark task PR for a competent CS engineer, explain its verifier and review rubric, then check understanding with one applied question at a time. Use when the user wants to understand or present a task before reviewing it.",
           "description_html": "Walk through a Terminal-Bench task, internal eval, or benchmark task PR for a competent CS engineer, explain its verifier and review rubric, then check understanding with one applied question at a time. Use when the user wants to understand or present a task before reviewing it.",
           "meta": ""
-        }
-      ],
-      "agents": [],
-      "hooks": [],
-      "mcp_servers": [],
-      "rules": [],
-      "author": {
-        "name": "stbenjam"
-      }
-    },
-    {
-      "name": "rules",
-      "description": "Context-specific rules for safe Git operations and rigorous test-failure investigation.",
-      "version": "0.2.0",
-      "has_readme": true,
-      "commands": [],
-      "skills": [
-        {
-          "name": "git-rules",
-          "description": "Use this skill for critical Git rules whenever working with Git, especially before committing, pushing, rebasing, comparing branches, or preparing a pull request.",
-          "description_html": "Use this skill for critical Git rules whenever working with Git, especially before committing, pushing, rebasing, comparing branches, or preparing a pull request.",
-          "meta": "License: MIT"
-        },
-        {
-          "name": "test-failures",
-          "description": "Use this skill whenever any test fails. Follow the required investigation process before deciding whether a failure is pre-existing or what to fix.",
-          "description_html": "Use this skill whenever any test fails. Follow the required investigation process before deciding whether a failure is pre-existing or what to fix.",
-          "meta": "License: MIT"
         }
       ],
       "agents": [],
@@ -772,6 +694,88 @@ footer a { color: var(--primary); }
           "name": "wtf",
           "description": "Explain the reasoning, evidence, assumptions, and tradeoffs behind the immediately preceding action or result.",
           "description_html": "Explain the reasoning, evidence, assumptions, and tradeoffs behind the immediately preceding action or result.",
+          "meta": "License: MIT"
+        }
+      ],
+      "agents": [],
+      "hooks": [],
+      "mcp_servers": [],
+      "rules": [],
+      "author": {
+        "name": "stbenjam"
+      }
+    },
+    {
+      "name": "stevestack",
+      "description": "Steve's workflow for shipping code: brainstorming, model panels, design docs, working principles, deep review, PR shepherding, diagrams, and Git and test hygiene.",
+      "version": "0.1.0",
+      "has_readme": true,
+      "commands": [],
+      "skills": [
+        {
+          "name": "ask-me",
+          "description": "Brainstorm an unsettled idea together, one question at a time.",
+          "description_html": "Brainstorm an unsettled idea together, one question at a time.",
+          "meta": "License: MIT"
+        },
+        {
+          "name": "braintrust",
+          "description": "Convene a mini or mega panel of different models on a design, codebase or decision, and lead with the findings only one panelist raised. Use when the user asks for a braintrust, panel, council, mini-panel or mega-panel, or wants several independent opinions.",
+          "description_html": "Convene a mini or mega panel of different models on a design, codebase or decision, and lead with the findings only one panelist raised. Use when the user asks for a braintrust, panel, council, mini-panel or mega-panel, or wants several independent opinions.",
+          "meta": "License: MIT"
+        },
+        {
+          "name": "deep-review",
+          "description": "Use when a deeper level of code review is requested. Multi-agent panel code review with specialist reviewers and forced runtime reproducers for all BLOCKING bug findings. Optionally posts to GitHub/GitLab as a PENDING review.",
+          "description_html": "Use when a deeper level of code review is requested. Multi-agent panel code review with specialist reviewers and forced runtime reproducers for all BLOCKING bug findings. Optionally posts to GitHub/GitLab as a PENDING review.",
+          "meta": ""
+        },
+        {
+          "name": "design-doc",
+          "description": "Write a short, accurate design doc in Google Docs with diagrams. Use when asked to write or update a design doc.",
+          "description_html": "Write a short, accurate design doc in Google Docs with diagrams. Use when asked to write or update a design doc.",
+          "meta": "License: MIT"
+        },
+        {
+          "name": "diagrams",
+          "description": "Draw minimal monospace box diagrams (architecture, trust boundaries, data flow, sequence of steps) for a design doc, RFC, README or slide, rendered to a light-and-dark SVG plus PNGs from hand-placed coordinates with the bundled Python script. Use whenever a document needs a diagram and the ask is for a clean, high-level picture rather than an auto-laid-out graph.",
+          "description_html": "Draw minimal monospace box diagrams (architecture, trust boundaries, data flow, sequence of steps) for a design doc, RFC, README or slide, rendered to a light-and-dark SVG plus PNGs from hand-placed coordinates with the bundled Python script. Use whenever a document needs a diagram and the ask is for a clean, high-level picture rather than an auto-laid-out graph.",
+          "meta": "License: MIT"
+        },
+        {
+          "name": "git-rules",
+          "description": "Use this skill for critical Git rules whenever working with Git, especially before committing, pushing, rebasing, comparing branches, or preparing a pull request.",
+          "description_html": "Use this skill for critical Git rules whenever working with Git, especially before committing, pushing, rebasing, comparing branches, or preparing a pull request.",
+          "meta": "License: MIT"
+        },
+        {
+          "name": "land",
+          "description": "Authorize merging the current PR yourself once it meets the bar.",
+          "description_html": "Authorize merging the current PR yourself once it meets the bar.",
+          "meta": "License: MIT"
+        },
+        {
+          "name": "pr-loop",
+          "description": "Shepherd a PR: merge base branch, fix CI, address review comments, resolve threads, and monitor until merged. Use when asked to drive a pull request through to merge.",
+          "description_html": "Shepherd a PR: merge base branch, fix CI, address review comments, resolve threads, and monitor until merged. Use when asked to drive a pull request through to merge.",
+          "meta": ""
+        },
+        {
+          "name": "principles",
+          "description": "stbenjam's working principles. Use before making, reviewing, or shipping a change.",
+          "description_html": "stbenjam&#x27;s working principles. Use before making, reviewing, or shipping a change.",
+          "meta": "License: MIT"
+        },
+        {
+          "name": "ship",
+          "description": "Take work from any stage to an open, deep-reviewed PR.",
+          "description_html": "Take work from any stage to an open, deep-reviewed PR.",
+          "meta": "License: MIT"
+        },
+        {
+          "name": "test-failures",
+          "description": "Use this skill whenever any test fails. Follow the required investigation process before deciding whether a failure is pre-existing or what to fix.",
+          "description_html": "Use this skill whenever any test fails. Follow the required investigation process before deciding whether a failure is pre-existing or what to fix.",
           "meta": "License: MIT"
         }
       ],
