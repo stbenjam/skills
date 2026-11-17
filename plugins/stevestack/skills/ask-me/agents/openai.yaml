@@ -1,0 +1,10 @@
+interface:
+  display_name: "Ask Me"
+  short_description: "Brainstorm an idea one question at a time."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#DB2777"
+  default_prompt: "Use $ask-me to brainstorm this with me."
+
+policy:
+  allow_implicit_invocation: false

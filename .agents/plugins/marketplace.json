@@ -17,34 +17,10 @@
       "category": "Productivity"
     },
     {
-      "name": "loops",
+      "name": "benchmarks",
       "source": {
         "source": "local",
-        "path": "./plugins/loops"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "reviews",
-      "source": {
-        "source": "local",
-        "path": "./plugins/reviews"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Developer Tools"
-    },
-    {
-      "name": "rules",
-      "source": {
-        "source": "local",
-        "path": "./plugins/rules"
+        "path": "./plugins/benchmarks"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -113,10 +89,10 @@
       "category": "Developer Tools"
     },
     {
-      "name": "diagrams",
+      "name": "stevestack",
       "source": {
         "source": "local",
-        "path": "./plugins/diagrams"
+        "path": "./plugins/stevestack"
       },
       "policy": {
         "installation": "AVAILABLE",

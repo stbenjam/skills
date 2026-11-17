@@ -1,0 +1,7 @@
+interface:
+  display_name: "Design Doc"
+  short_description: "Write a short, accurate design doc."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#4338CA"
+  default_prompt: "Use $design-doc to write a design doc for this."

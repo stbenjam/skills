@@ -1,0 +1,8 @@
+{
+  "name": "benchmarks",
+  "description": "Skills for benchmark and eval tasks, such as guided walkthroughs of a task, its verifier, and its review rubric.",
+  "version": "0.1.0",
+  "author": {
+    "name": "stbenjam"
+  }
+}

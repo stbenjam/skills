@@ -1,0 +1,21 @@
+{
+  "name": "stevestack",
+  "version": "0.1.0",
+  "description": "Steve's workflow for shipping code: brainstorming, model panels, design docs, working principles, deep review, PR shepherding, diagrams, and Git and test hygiene.",
+  "author": {
+    "name": "stbenjam"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Steve Stack",
+    "shortDescription": "Ship code the way stbenjam does.",
+    "longDescription": "Brainstorm an idea, convene a panel of models on it, or write it up as a design doc, then take the work to an open, deep-reviewed PR and shepherd it to merge, guided by shared working principles, with box diagrams for docs and PRs and rules for safe Git and test-failure investigation.",
+    "developerName": "stbenjam",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": "Ship this work as a deep-reviewed PR."
+  }
+}
