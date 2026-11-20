@@ -1,0 +1,7 @@
+interface:
+  display_name: "Unslop Prose"
+  short_description: "Send branch prose to Gemini 4 Neon for clarity and warmth."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#D97706"
+  default_prompt: "Use $unslop-prose to polish all prose added on this branch."
