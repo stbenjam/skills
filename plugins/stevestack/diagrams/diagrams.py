@@ -248,7 +248,7 @@ DIAGRAMS: dict[str, dict] = {
             dotted(C2, R3, BOX_W, BOX_H, "land"),
             arrow([(250, 329), (270, 329)]),
             solid(C3, R3, BOX_W, BOX_H, "merged"),
-            bar(18, 376, 484, 36, "principles · git-rules · diagrams"),
+            bar(18, 376, 484, 36, "principles · git-rules · diagrams · unslop-prose"),
         ],
     },
 }

@@ -21,6 +21,7 @@ Code, Codex, and standalone Agent Skills setup.
 - [`principles`](skills/principles/SKILL.md) — stbenjam's working principles. Use before making, reviewing, or shipping a change.
 - [`ship`](skills/ship/SKILL.md) — Take work from any stage to an open, deep-reviewed PR.
 - [`test-failures`](skills/test-failures/SKILL.md) — Use this skill whenever any test fails. Follow the required investigation process before deciding whether a failure is pre-existing or what to fix.
+- [`unslop-prose`](skills/unslop-prose/SKILL.md) — Spawn a T3 thread on Gemini 4 Neon to review and polish all prose added on this branch for clarity, warmth, and readability. Use when asked to polish, humanize, or improve writing on a branch before shipping.
 <!-- END GENERATED SKILLS -->
 
 ## How the skills fit together
@@ -32,9 +33,10 @@ convenes a panel of models for independent opinions on a design or decision.
 `design-doc` writes the design up in Google Docs when it needs one.
 `ship` takes work from any stage to an open PR. It runs `deep-review` before
 opening the PR, uses `diagrams` where the description needs a picture, and
-hands the PR to `pr-loop` to shepherd it to merge. `land` authorizes the
-agent to merge it itself once it meets the bar. `principles`, `git-rules`
-and `test-failures` apply throughout.
+hands the PR to `pr-loop` to shepherd it to merge. `unslop-prose` sends a
+branch's added prose to Gemini 4 Neon to polish for clarity, warmth, and
+readability. `land` authorizes the agent to merge the PR itself once it meets
+the bar. `principles`, `git-rules` and `test-failures` apply throughout.
 
 `ask-me` is adapted from the `grilling` skill in
 [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity).
